@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Varauslomake</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varaus</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap">
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f4f1; color: #222; }
-    header { background: #2e5e4e; color: white; padding: 20px; text-align: center; }
-    nav { display: flex; justify-content: center; background: #1d4734; padding: 10px; flex-wrap: wrap; }
-    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    footer { background: #2e5e4e; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f4f1; margin: 0; padding: 0; }
+    header, footer { background: #2e5e4e; color: white; text-align: center; padding: 20px; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; background: #1d4734; padding: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 960px; margin: auto; }
+    .info-box, .gallery img, ul, form { margin-bottom: 20px; }
+    .info-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    img { width: 100%; border-radius: 6px; }
+    input, textarea { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 10px 20px; background: #2e5e4e; color: white; border: none; border-radius: 5px; cursor: pointer; }
   </style>
 </head>
 <body>
-<header>
-  <h1>Valkjärven Lomakylä</h1>
-</header>
-<nav>
-  <a href="index.html">Etusivu</a>
-  <a href="mokit.html">Mökit</a>
-  <a href="palvelut.html">Palvelut</a>
-  <a href="galleria.html">Galleria</a>
-  <a href="leirit.html">Leirit</a>
-  <a href="varaus.html">Varaus</a>
-  <a href="asiakkaat.html">Palautteet</a>
-  <a href="kioski.html">Kioski</a>
-  <a href="faq.html">UKK</a>
-  <a href="yhteys.html">Yhteystiedot</a>
-</nav>
-<section>
-  <h2>Varauslomake</h2>
-  <p>Tervetuloa sivulle: Varauslomake</p>
-</section>
-<footer>&copy; 2025 Valkjärven Lomakylä</footer>
+  <header><h1>Valkjärven Lomakylä</h1></header>
+  <nav>
+    <a href="index.html">Etusivu</a>
+    <a href="mokit.html">Mökit</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="galleria.html">Galleria</a>
+    <a href="leirit.html">Leirit</a>
+    <a href="varaus.html">Varaus</a>
+    <a href="asiakkaat.html">Palautteet</a>
+    <a href="kioski.html">Kioski</a>
+    <a href="faq.html">UKK</a>
+    <a href="yhteys.html">Yhteystiedot</a>
+  </nav>
+  <section>
+    
+    <h2>Varauslomake</h2>
+    <form>
+      <label for="nimi">Nimi</label>
+      <input type="text" id="nimi" name="nimi">
+      <label for="email">Sähköposti</label>
+      <input type="email" id="email" name="email">
+      <label for="viesti">Viesti</label>
+      <textarea id="viesti" name="viesti" rows="4"></textarea>
+      <button class="button" type="submit">Lähetä varauspyyntö</button>
+    </form>
+    
+  </section>
+  <footer>&copy; 2025 Valkjärven Lomakylä</footer>
 </body>
 </html>
