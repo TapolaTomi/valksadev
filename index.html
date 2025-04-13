@@ -9,11 +9,12 @@
     header { background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover; color: white; text-align: center; padding: 100px 20px; }
     header h1 { font-size: 3em; margin: 0; }
     header p { font-size: 1.3em; margin-top: 10px; }
-    nav { display: flex; justify-content: center; background: #2e5e4e; padding: 10px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav { display: flex; justify-content: center; background: #2e5e4e; padding: 10px; flex-wrap: wrap; }
+    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
     section { padding: 40px 20px; max-width: 1000px; margin: auto; }
     .gallery img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
-    .info-box { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 30px; }
+    .info-box { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .info-box img { width: 100%; max-width: 260px; height: 180px; object-fit: cover; border-radius: 6px; margin-top: 10px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
     footer { background: #2e5e4e; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     .button { background: #1d4734; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
@@ -40,17 +41,17 @@
     <div class="info-box">
       <h3>Pienet mökit</h3>
       <p>4 hlö / 60 €/yö / Jaetut mukavuudet</p>
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Pieni mökki" />
+      <img src="https://source.unsplash.com/featured/?cabin,forest" alt="Pieni mökki" />
     </div>
     <div class="info-box">
       <h3>Iso mökki</h3>
       <p>6–8 hlö / 100 €/yö / Jaetut mukavuudet</p>
-      <img src="https://images.unsplash.com/photo-1600573472934-43c76505b04b" alt="Iso mökki" />
+      <img src="https://source.unsplash.com/featured/?cottage,nature" alt="Iso mökki" />
     </div>
     <div class="info-box">
       <h3>Päärakennus</h3>
       <p>15 hlö / 215 €/yö / Sauna, keittiö, 3x WC</p>
-      <img src="https://images.unsplash.com/photo-1600585154516-01988b036106" alt="Päärakennus" />
+      <img src="https://source.unsplash.com/featured/?wooden,house,lake" alt="Päärakennus" />
     </div>
   </div>
 </section>
@@ -80,9 +81,9 @@
 <section id="galleria">
   <h2>Galleria</h2>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1505480449763-1c1f83b62d5f" alt="Ranta" />
-    <img src="https://images.unsplash.com/photo-1532274402917-5aadf881bdfb" alt="Nuotiopaikka" />
-    <img src="https://images.unsplash.com/photo-1611691548132-8ee03eb871a6" alt="Sauna ja laituri" />
+    <img src="https://source.unsplash.com/featured/?lake,forest" alt="Ranta" />
+    <img src="https://source.unsplash.com/featured/?campfire,woods" alt="Nuotiopaikka" />
+    <img src="https://source.unsplash.com/featured/?sauna,dock" alt="Sauna ja laituri" />
   </div>
 </section>
 
